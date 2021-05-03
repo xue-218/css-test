@@ -1,0 +1,70 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="haeder-container">
+    <image class="image-logo" src="../../images/header-logo.png"></image>
+    <image mode="aspectFit" class="haeder-image" src="../../images/header-bg-m.jpg"></image>
+    <image class="image-slogan" src="../../images/slogan.png"></image>
+    <button class="header-botton">立即投稿</button>
+    <image class="header-arrow arrow" src="../../images/arr-down.png"></image>
+    <image class="header-arrow arrow-2" src="../../images/arr-down.png"></image>
+  </view>
+  <view class="body-container">
+    <view class="nameTitle">
+      <text class="theme-title">征集主题</text>
+      <view class="theme-bar"></view>
+      <text class="theme-text">本次围绕“抗议”主题征集，包括但不限于以下方向，欢迎大家踊跃发挥创意。</text>
+    </view>
+    <view class="theme-body">
+      <view class="theme-body-item" wx:for="{{datalist}}">
+        <image class="item-img" src="{{item.url}}"></image>
+        <text class="item-title">{{item.title}}</text>
+        <text class="theme-text">{{item.text}}</text>
+      </view>
+    </view>
+    <view class="nameTitle">
+      <text class="theme-title">帮助项目</text>
+      <view class="theme-bar"></view>
+      <text class="theme-text">本次规则仅适用于“战役”特别版，WeCare第四期即将开启，敬请期待！</text>
+    </view>
+    <view class="project-body">
+      <view class="project-item theme-body-item" wx:for="{{3}}">
+        <view class=" theme-body-item project-top">
+          <view class="project-top-left">
+            <image class="project-image" src="../../images/cover.png"></image>
+          </view>
+          <view class=" theme-body-item project-top-right">
+            <text class="project-title">花季少女盼重生</text>
+            <view class="theme-body-item tag-wrap ">
+              <view class="tag">贵州</view>
+              <view class="tag">儿童</view>
+              <view class="tag">疾病救助</view>
+            </view>
+            <text class="project-text">即将买进大学校门的十八岁少女，如何面对自己白血病三七的命运？</text>
+          </view>
+        </view>
+        <view class=" theme-body-item project-bottom">
+          <text>发起机构：南阳市卧龙区社会救助服务中心</text>
+          <text>善款接收：哎呦未来基金会</text>
+        </view>
+      </view>
+    </view>
+    <view class="nameTitle">
+      <text class="theme-title">特别版参与流程</text>
+      <view class="theme-bar"></view>
+      <view class="specially-body" >
+        <view class="sp-item"  wx:for="{{speciallyData}}">
+          <view class="sp-item-decoration">
+            <view class="sp-item-line {{index === 3 ? 'arrow' : ''}}"></view>
+          </view>
+          <image class="sp-item-icon" src="{{item.url}}"></image>
+          <view class="sp-item-text">
+            <text>{{item.text}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="bottom-container">
+    <image class="bottom-image"   src="../../images/Snipaste.png"></image>
+  </view>
+</view>
