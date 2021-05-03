@@ -15,7 +15,7 @@
       <text class="theme-text">本次围绕“抗议”主题征集，包括但不限于以下方向，欢迎大家踊跃发挥创意。</text>
     </view>
     <view class="theme-body">
-      <view class="theme-body-item" wx:for="{{datalist}}">
+      <view class="flex" wx:for="{{datalist}}">
         <image class="item-img" src="{{item.url}}"></image>
         <text class="item-title">{{item.title}}</text>
         <text class="theme-text">{{item.text}}</text>
@@ -27,14 +27,14 @@
       <text class="theme-text">本次规则仅适用于“战役”特别版，WeCare第四期即将开启，敬请期待！</text>
     </view>
     <view class="project-body">
-      <view class="project-item theme-body-item" wx:for="{{3}}">
-        <view class=" theme-body-item project-top">
+      <view class="project-item flex" wx:for="{{3}}">
+        <view class=" flex project-top">
           <view class="project-top-left">
             <image class="project-image" src="../../images/cover.png"></image>
           </view>
-          <view class=" theme-body-item project-top-right">
+          <view class=" flex project-top-right">
             <text class="project-title">花季少女盼重生</text>
-            <view class="theme-body-item tag-wrap ">
+            <view class="flex tag-wrap ">
               <view class="tag">贵州</view>
               <view class="tag">儿童</view>
               <view class="tag">疾病救助</view>
@@ -42,7 +42,7 @@
             <text class="project-text">即将买进大学校门的十八岁少女，如何面对自己白血病三七的命运？</text>
           </view>
         </view>
-        <view class=" theme-body-item project-bottom">
+        <view class=" flex project-bottom">
           <text>发起机构：南阳市卧龙区社会救助服务中心</text>
           <text>善款接收：哎呦未来基金会</text>
         </view>

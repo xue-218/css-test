@@ -102,7 +102,7 @@
 
 theme-body {}
 
-.theme-body-item {
+.flex {
   display: flex;
   justify-items: center;
   align-items: center;
@@ -171,7 +171,7 @@ theme-body {}
   font-size: 26rpx;
 }
 
-.project-bottom.theme-body-item {
+.project-bottom.flex {
   margin-top: 10rpx;
   color: #8d98a3;
   text-align: center;
